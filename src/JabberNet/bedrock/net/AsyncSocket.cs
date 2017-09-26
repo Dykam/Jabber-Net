@@ -1,4 +1,4 @@
-﻿/* --------------------------------------------------------------------------
+/* --------------------------------------------------------------------------
  * Copyrights
  *
  * Portions created by or assigned to Cursive Systems, Inc. are
@@ -277,7 +277,7 @@ namespace JabberNet.bedrock.net
                     m_cert = coll[0];
                     return;
                 default:
-                    #if __MonoCS__
+                    #if __MonoCS__ || NETSTANDARD2_0
                         m_cert = null;
                     #else
                     X509Certificate2Collection certs = X509Certificate2UI.SelectFromCollection(
