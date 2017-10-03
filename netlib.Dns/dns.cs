@@ -1,12 +1,11 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Runtime.Serialization;
-using netlib.Dns.Records;
+using NetLib.Dns.Records;
 
-namespace netlib.Dns
+namespace NetLib.Dns
 {
     /// <summary>
     /// Represents a complete DNS record (DNS_RECORD)
@@ -554,31 +553,31 @@ namespace netlib.Dns
     ///     </listheader>
     ///     <item>
     ///         <term>A</term>
-    ///         <description><see cref="netlib.Dns.Records.ARecord"/></description>
+    ///         <description><see cref="ARecord"/></description>
     ///     </item>
     ///     <item>
     ///         <term>CNAME</term>
-    ///         <description><see cref="netlib.Dns.Records.PTRRecord"/></description>
+    ///         <description><see cref="PTRRecord"/></description>
     ///     </item>
     ///     <item>
     ///         <term>PTR</term>
-    ///         <description><see cref="netlib.Dns.Records.PTRRecord"/></description>
+    ///         <description><see cref="PTRRecord"/></description>
     ///     </item>
     ///     <item>
     ///         <term>MX</term>
-    ///         <description><see cref="netlib.Dns.Records.MXRecord"/></description>
+    ///         <description><see cref="MXRecord"/></description>
     ///     </item>
     ///     <item>
     ///         <term>SOA</term>
-    ///         <description><see cref="netlib.Dns.Records.SOARecord"/></description>
+    ///         <description><see cref="SOARecord"/></description>
     ///     </item>
     ///     <item>
     ///         <term>SRV</term>
-    ///         <description><see cref="netlib.Dns.Records.SRVRecord"/></description>
+    ///         <description><see cref="SRVRecord"/></description>
     ///     </item>
     ///     <item>
     ///         <term>TEXT</term>
-    ///         <description><see cref="netlib.Dns.Records.TXTRecord"/></description>
+    ///         <description><see cref="TXTRecord"/></description>
     ///     </item>
     /// </list>
     /// </remarks>
@@ -1605,7 +1604,7 @@ namespace netlib.Dns
         /// all DNS records (available in the <see cref="RawRecords"/>
         /// property.</param>
         /// <returns>an <see cref="ArrayList"/> of one of the types
-        /// specified in the <see cref="netlib.Dns.Records"/> namespace based
+        /// specified in the <see cref="NetLib.Dns.Records"/> namespace based
         /// on the <see cref="DnsRecordType"/> argument representing the
         /// type of DNS record desired.
         /// </returns>
@@ -1613,7 +1612,7 @@ namespace netlib.Dns
         /// It is recommended that you loop through the results of this
         /// method as follows for maximum convenience:
         /// <code>
-        /// foreach (<see cref="netlib.Dns.Records"/> record in obj.GetRecords(<see cref="DnsRecordType"/>))
+        /// foreach (<see cref="NetLib.Dns.Records"/> record in obj.GetRecords(<see cref="DnsRecordType"/>))
         /// {
         ///     string s = record.ToString();
         /// }
@@ -1628,27 +1627,27 @@ namespace netlib.Dns
         ///     </listheader>
         ///     <item>
         ///         <term>A</term>
-        ///         <description><see cref="netlib.Dns.Records.ARecord"/></description>
+        ///         <description><see cref="ARecord"/></description>
         ///     </item>
         ///     <item>
         ///         <term>CNAME</term>
-        ///         <description><see cref="netlib.Dns.Records.PTRRecord"/></description>
+        ///         <description><see cref="PTRRecord"/></description>
         ///     </item>
         ///     <item>
         ///         <term>PTR</term>
-        ///         <description><see cref="netlib.Dns.Records.PTRRecord"/></description>
+        ///         <description><see cref="PTRRecord"/></description>
         ///     </item>
         ///     <item>
         ///         <term>MX</term>
-        ///         <description><see cref="netlib.Dns.Records.MXRecord"/></description>
+        ///         <description><see cref="MXRecord"/></description>
         ///     </item>
         ///     <item>
         ///         <term>SRV</term>
-        ///         <description><see cref="netlib.Dns.Records.SRVRecord"/></description>
+        ///         <description><see cref="SRVRecord"/></description>
         ///     </item>
         ///     <item>
         ///         <term>TEXT</term>
-        ///         <description><see cref="netlib.Dns.Records.TXTRecord"/></description>
+        ///         <description><see cref="TXTRecord"/></description>
         ///     </item>
         /// </list>
         /// </remarks>
